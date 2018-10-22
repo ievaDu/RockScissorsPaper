@@ -143,12 +143,12 @@ function clickHandlerAkmens(){
 	
 
 
-function clickHandlerSkeres(){ // declare a function that updates the state
-  elementIsClicked = true;
-  computerChoice = PcChoice();
-  skeres.style.pointerEvents = "none";
-  papirs.style.visibility = "hidden";
-  akmens.style.visibility = "hidden";
+	function clickHandlerSkeres(){ // declare a function that updates the state
+  	elementIsClicked = true;
+  	computerChoice = PcChoice();
+  	skeres.style.pointerEvents = "none";
+  	papirs.style.visibility = "hidden";
+  	akmens.style.visibility = "hidden";
   
 	if(computerChoice === 1){
 	skeres1.style.visibility = "visible";
@@ -288,7 +288,7 @@ function clickHandlerSkeres(){ // declare a function that updates the state
 	 }, 3800);
 
 
-} else if(computerChoice === 1) {
+	} else if(computerChoice === 1) {
 	PC++;
 	skeres1.style.visibility = "visible";
 	skeres1.style.position = "absolute";
@@ -314,27 +314,15 @@ function clickHandlerSkeres(){ // declare a function that updates the state
 	papirs.style.pointerEvents = "auto";
 	 }, 3800);
 	
-}
+	}
 	userPoints.textContent = user;
 	PCPoints.textContent = PC;
 	elementIsClicked = false;
 
-}
+	}
 
 akmens.addEventListener('click', clickHandlerAkmens); // associate the function above with the click event
 skeres.addEventListener('click', clickHandlerSkeres);
 papirs.addEventListener('click', clickHandlerPapirs);
-
-/*if(elementIsClicked = true){
-//var element = document.getElementById('myElement'); // grab a reference to your element
-akmens.removeEventListener('click', clickHandlerAkmens); // associate the function above with the click event
-skeres.removeEventListener('click', clickHandlerSkeres);
-papirs.removeEventListener('click', clickHandlerPapirs);
-} /*else {
-
-	akmens.removeEventListener('click', clickHandlerAkmens); // associate the function above with the click event
-skeres.removeEventListener('click', clickHandlerSkeres);
-papirs.removeEventListener('click', clickHandlerPapirs);
-}
 
 
