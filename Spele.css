@@ -1,0 +1,166 @@
+body {
+	/*background-image: url("img/leaves.png");*/
+	background-color: black;
+	height: 100vh;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 60px;
+	margin-top: 5px;
+
+
+}
+
+#points {
+	margin: auto;
+}
+
+#userPics{
+
+}
+
+img {
+	border-radius: 30%;
+	border: none;
+}
+
+#akmens {
+	margin-left: 18%;
+	width: 20%;
+	height: auto;
+	margin-right: 25px;
+}
+#skeres {
+	width: 20%;
+	height: auto;
+	margin-right: 25px;
+}
+
+#papirs {
+
+	width: 20%;
+	height: auto;
+}
+
+#points {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+#PcPics {
+	
+	position: relative;
+}
+#akmens1{
+	margin-left: 25%;
+}
+
+#akmens1, #skeres1, #papirs1 {
+	visibility: hidden;
+	width: 20%;
+	height: auto;
+}
+
+#reaction {
+	position: relative;
+}
+
+#rockBeatsScissors{
+	background-color: white;
+}
+
+
+#rockBeatsScissors {
+	visibility: hidden;
+}
+
+
+#tied {
+	visibility: hidden;
+	width: 40%;
+	position: absolute;
+	bottom: -200%;
+}
+
+#scissorsBeatPaper {
+	visibility: hidden;
+
+}
+
+#paperCoversRock {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 800px){
+	h1 {
+		font-size: 10vw;
+		}
+	#PcPics {
+		position: relative;
+	}
+
+	#userPics {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#akmens, #skeres, #papirs {
+		width: 30%;
+		height: auto;
+		margin-left: 30%;
+		margin-right: 20%;
+		margin-top: 10%;
+	}
+	#akmens1, #skeres1, #papirs1 {
+		width: 30%;
+		height: auto;
+	}
+
+	.tenor-gif-embed {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 400px){
+
+	
+	h1 {
+		font-size: 8vw;
+		margin-left: 0px;
+		
+		}
+	#PcPics {
+		position: relative;
+	}
+
+	#userPics {
+		display: flex;
+		flex-direction: column;
+		max-width: 400px;
+	}
+
+	#akmens, #skeres, #papirs {
+		width: 40%;
+		height: auto;
+		margin-left: 30%;
+		margin-right: 20%;
+		margin-top: 10%;
+	}
+
+	#akmens1, #skeres1, #papirs1 {
+		width: 40%;
+		height: auto;
+		
+	}
+
+	#tied {
+		width: 60%;
+	}
+
+
+}
+
